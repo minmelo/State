@@ -2,6 +2,7 @@ public class Borboleta {
 
     private Estado estado;
 
+    // Estado inicial
     public Borboleta() {
         this.estado = new Ovo();
     }
@@ -14,6 +15,7 @@ public class Borboleta {
         estado.mostrarComportamento();
     }
 
+    // Próximo estado
     public void proximoEstado() {
         estado.proximo(this);
     }
